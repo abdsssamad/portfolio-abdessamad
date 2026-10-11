@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Découvrez les projets d'Abdessamad Kharmouch en Data Engineering, Data Science, Deep Learning et IoT agricole.">
+
+  <title>Mes projets | Abdessamad Kharmouch</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+.projets-intro {
+    max-width: 780px;
+    margin: 0 auto 35px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+    .projet-image {
+      width: 100%;
+      height: 220px;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+      margin-bottom: 20px;
+      border-radius: 0;
+      background: #151e30;
+    }
+
+    .projet {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .projet-description {
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+
+    .projet h3 {
+      line-height: 1.5;
+      margin: 12px 0;
+    }
+
+    .projet h4 {
+      margin: 15px 0 8px;
+      font-size: 0.95rem;
+    }
+
+    .projet-details {
+      padding-left: 20px;
+      margin: 0 0 18px;
+      line-height: 1.8;
+    }
+
+    .projet .tags {
+      margin-top: auto;
+      padding-top: 12px;
+      padding-bottom: 16px;
+    }
+
+    .projet-categorie {
+      display: inline-block;
+      color: #8dbaff;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .projet-note {
+      font-size: 0.85rem;
+      color: #a9b6ca;
+      line-height: 1.7;
+      margin-top: 12px;
+    }
+
+    .projet-separateur {
+      border: 0;
+      border-top: 1px solid rgba(148, 163, 184, 0.2);
+      margin: 15px 0;
+    }
+
+    @media (max-width: 600px) {
+      .projet-image {
+        height: 190px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="navbar">
+  <a class="brand" href="index.html">Kharmouch Abdessamad</a>
+
+  <nav aria-label="Navigation principale">
+    <ul>
+      <li><a href="index.html">À propos</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="projets.html" aria-current="page">Projets</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- INTRODUCTION -->
+  <section>
+    <h1 class="titre-section">Mes projets</h1>
+
+    <p class="sous-section projets-intro">
+      
+      Découvrez une sélection de projets réalisés dans le cadre de mon
+      parcours académique, illustrant mes compétences en ingénierie des
+      données, analyse de données, intelligence artificielle et développement
+      de systèmes intelligents.
+    </p>
+    
+    <div class="grille grille-2">
+
+      <!-- PROJET 1 : IOT AGRICOLE -->
+      <article class="carte projet">
+
+        <img
+          class="projet-image"
+          src="agrii.jpg"
+          alt="Système agricole connecté utilisant des capteurs et l'intelligence artificielle"
+          loading="lazy"
+          onerror="this.onerror=null;this.style.display='none';"
+        >
+
+        <span class="projet-categorie">Intelligence artificielle · IoT</span>
+        <span class="annee">2026</span>
+
+        <h3>
+          Détection des anomalies et des attaques dans un système IoT agricole
+        </h3>
+
+        <p class="projet-description">
+          Ce projet porte sur la conception d'une solution intelligente
+          destinée à renforcer la sécurité et la fiabilité d'un système
+          agricole connecté. L'objectif est d'analyser les données collectées
+          par les capteurs afin d'identifier les comportements inhabituels,
+          les anomalies de fonctionnement et les éventuelles cyberattaques.
+        </p>
+
+        <hr class="projet-separateur">
+
+        <h4>Objectifs du projet</h4>
+
+        <ul class="projet-details">
+          <li>Surveiller les données issues des capteurs agricoles.</li>
+          <li>Identifier les anomalies dans les mesures et les comportements.</li>
+          <li>Étudier la détection des cyberattaques dans un environnement IoT.</li>
+          <li>Contribuer à la fiabilité et à la durabilité du système agricole.</li>
+        </ul>
+
+        <h4>Approche technique</h4>
+
+        <p class="projet-description">
+          Le projet s'appuie sur Python et des méthodes de Deep Learning,
+          notamment une architecture CNN-BiLSTM envisagée pour exploiter
+          les caractéristiques des données et leurs évolutions temporelles.
+          Les performances du modèle doivent être évaluées à partir de
+          données adaptées.
+        </p>
+
+        <ul class="tags">
+          <li>Python</li>
+          <li>Deep Learning</li>
+          <li>CNN-BiLSTM</li>
+          <li>IoT</li>
+          <li>Détection d'anomalies</li>
+          <li>Cybersécurité</li>
+        </ul>
+
+        <p class="projet-note">
+          Projet de recherche appliquée en intelligence artificielle
+          et sécurité des systèmes IoT agricoles.
+        </p>
+
+      </article>
+
+
+      <!-- PROJET 2 : VISUALISATION -->
+      <article class="carte projet">
+
+        <img
+          class="projet-image"
+          src="région.jpg"
+          alt="Tableau de bord analytique illustrant des indicateurs sociologiques des régions marocaines"
+          loading="lazy"
+          onerror="this.onerror=null;this.style.display='none';"
+        >
+
+        <span class="projet-categorie">Data Science · Data Visualization</span>
+        <span class="annee">2025</span>
+
+        <h3>
+          Visualisation des données sociologiques des régions marocaines
+        </h3>
+
+        <p class="projet-description">
+          Développement d'une plateforme dédiée à l'exploration et à la
+          visualisation de données sociologiques relatives aux régions du
+          Maroc. L'objectif est de rendre les données plus accessibles et
+          de faciliter la comparaison des indicateurs entre différentes
+          régions à travers une représentation visuelle claire.
+        </p>
+
+        <hr class="projet-separateur">
+
+        <h4>Fonctionnalités principales</h4>
+
+        <ul class="projet-details">
+          <li>Organisation et préparation des données sociologiques.</li>
+          <li>Exploration des indicateurs et comparaison régionale.</li>
+          <li>Création de graphiques pour faciliter l'interprétation.</li>
+          <li>Présentation synthétique des résultats dans un tableau de bord.</li>
+        </ul>
+
+        <h4>Apport du projet</h4>
+
+        <p class="projet-description">
+          La visualisation permet de mieux comprendre la distribution
+          des indicateurs, d'observer les différences entre les régions
+          et de faciliter l'exploitation des données pour l'analyse.
+        </p>
+
+        <ul class="tags">
+          <li>Python</li>
+          <li>Data Analysis</li>
+          <li>Data Visualization</li>
+          <li>Pandas</li>
+          <li>Matplotlib</li>
+          <li>Dashboard</li>
+        </ul>
+
+        <p class="projet-note">
+          Projet d'analyse et de visualisation des données à visée
+          exploratoire et analytique.
+        </p>
+
+      </article>
+
+
+      <!-- PROJET 3 : DATA WAREHOUSE -->
+      <article class="carte projet">
+
+        <img
+          class="projet-image"
+          src="dw.jpg"
+          alt="Architecture de pipeline ETL et entrepôt de données"
+          loading="lazy"
+          onerror="this.onerror=null;this.style.display='none';"
+        >
+
+        <span class="projet-categorie">Data Engineering · BI</span>
+        <span class="annee">2025</span>
+
+        <h3>
+          Conception et alimentation d'un Data Warehouse
+        </h3>
+
+        <p class="projet-description">
+          Ce projet consiste à concevoir un entrepôt de données permettant
+          de centraliser et de structurer des informations pour faciliter
+          leur exploitation analytique. Il met en œuvre un processus ETL
+          permettant d'extraire les données depuis leurs sources, de les
+          transformer selon les besoins et de les charger dans la structure
+          cible.
+        </p>
+
+        <hr class="projet-separateur">
+
+        <h4>Étapes du projet</h4>
+
+        <ul class="projet-details">
+          <li>Étude des sources et organisation des données.</li>
+          <li>Conception de la structure de l'entrepôt de données.</li>
+          <li>Extraction, transformation et chargement avec Talend.</li>
+          <li>Création et exécution de requêtes SQL.</li>
+          <li>Préparation des données pour le reporting et l'analyse.</li>
+        </ul>
+
+        <h4>Apport du projet</h4>
+
+        <p class="projet-description">
+          Cette réalisation permet de mettre en pratique les principes
+          de l'intégration des données, de la modélisation et de la
+          centralisation de l'information pour répondre aux besoins
+          d'analyse et d'aide à la décision.
+        </p>
+
+        <ul class="tags">
+          <li>SQL</li>
+          <li>Talend</li>
+          <li>ETL</li>
+          <li>Data Warehouse</li>
+          <li>Modélisation</li>
+          <li>Reporting</li>
+        </ul>
+
+        <p class="projet-note">
+          Projet orienté intégration, structuration et exploitation
+          analytique des données.
+        </p>
+
+      </article>
+
+
+      <!-- PROJET 4 : IMAGES AQUATIQUES -->
+      <article class="carte projet">
+
+        <img
+          class="projet-image"
+          src="aqua.jpg"
+          alt="Analyse d'images sous-marines par vision par ordinateur et Deep Learning"
+          loading="lazy"
+          onerror="this.onerror=null;this.style.display='none';"
+        >
+
+        <span class="projet-categorie">Deep Learning · Computer Vision</span>
+        <span class="annee">2023</span>
+
+        <h3>
+          Traitement d'images aquatiques par Deep Learning
+        </h3>
+
+        <p class="projet-description">
+          Ce projet explore l'utilisation des techniques de Deep Learning
+          pour analyser des images aquatiques. L'objectif est d'étudier
+          comment les modèles d'apprentissage profond peuvent contribuer
+          à la reconnaissance de motifs visuels et à la classification
+          d'objets présents dans des images sous-marines.
+        </p>
+
+        <hr class="projet-separateur">
+
+        <h4>Travaux abordés</h4>
+
+        <ul class="projet-details">
+          <li>Préparation et organisation des images.</li>
+          <li>Prétraitement des données visuelles.</li>
+          <li>Étude des réseaux de neurones convolutifs (CNN).</li>
+          <li>Classification et analyse des caractéristiques visuelles.</li>
+          <li>Évaluation des résultats du modèle.</li>
+        </ul>
+
+        <h4>Apport du projet</h4>
+
+        <p class="projet-description">
+          Ce travail permet d'explorer les possibilités de la vision
+          par ordinateur pour analyser des données visuelles complexes
+          et de comprendre les principales étapes du développement
+          d'un modèle de Deep Learning.
+        </p>
+
+        <ul class="tags">
+          <li>Deep Learning</li>
+          <li>CNN</li>
+          <li>Python</li>
+          <li>Vision par ordinateur</li>
+          <li>Classification d'images</li>
+        </ul>
+
+        <p class="projet-note">
+          Projet académique consacré à l'analyse d'images et aux
+          techniques d'apprentissage profond.
+        </p>
+
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- AUTRES PROJETS -->
+  <section>
+    <h2 class="titre-section">Autres projets</h2>
+
+    <p class="sous-section">
+      Autres réalisations académiques en développement, bases de données et IoT.
+    </p>
+
+    <div class="grille grille-2">
+
+      <article class="carte projet">
+        <span class="annee">2025</span>
+
+        <h3>Plateforme web de gestion et d'évaluation des candidatures</h3>
+
+        <p class="projet-description">
+          Conception d'une application web destinée à organiser les
+          candidatures et à faciliter l'évaluation des profils selon
+          des critères définis. Le projet associe la gestion des
+          informations, le traitement des données et le développement web.
+        </p>
+
+        <ul class="tags">
+          <li>Python</li>
+          <li>Développement web</li>
+          <li>Bases de données</li>
+          <li>Évaluation des profils</li>
+        </ul>
+      </article>
+
+      <article class="carte projet">
+        <span class="annee">2024</span>
+
+        <h3>Système de gestion de parking basé sur l'IoT</h3>
+
+        <p class="projet-description">
+          Étude et réalisation d'un système de stationnement intelligent
+          utilisant des capteurs pour détecter l'occupation des places
+          et faciliter le suivi de leur disponibilité.
+        </p>
+
+        <ul class="tags">
+          <li>Arduino</li>
+          <li>IoT</li>
+          <li>Capteurs</li>
+          <li>Acquisition de données</li>
+        </ul>
+      </article>
+
+      <article class="carte projet">
+        <span class="annee">2024</span>
+
+        <h3>Gestion de bases de données avec SQL et PL/SQL</h3>
+
+        <p class="projet-description">
+          Travail académique consacré à la création et à l'interrogation
+          de bases de données relationnelles, avec des requêtes SQL,
+          des procédures stockées, des fonctions et des déclencheurs.
+        </p>
+
+        <ul class="tags">
+          <li>SQL</li>
+          <li>PL/SQL</li>
+          <li>Base relationnelle</li>
+          <li>Programmation de bases de données</li>
+        </ul>
+      </article>
+
+      <article class="carte projet">
+        <span class="annee">2023</span>
+
+        <h3>Ontologie pour systèmes multi-agents et villes intelligentes</h3>
+
+        <p class="projet-description">
+          Projet académique portant sur la modélisation des connaissances
+          à l'aide d'une ontologie et leur exploitation dans le contexte
+          des systèmes multi-agents appliqués aux villes intelligentes.
+        </p>
+
+        <ul class="tags">
+          <li>Java</li>
+          <li>Ontologie</li>
+          <li>Systèmes multi-agents</li>
+          <li>Smart City</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="pied">
+  © 2026 Abdessamad Kharmouch. Tous droits réservés.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Abdessamad Kharmouch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a class="brand" href="index.html">Kharmouch Abdessamad</a>
+  <nav aria-label="Navigation principale">
+    <ul>
+      <li><a href="index.html">À propos</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="projets.html">Projets</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h1 class="titre-section">Contactez-moi</h1>
+    <p class="sous-section">Une opportunité, une question, un projet ? Restons connectés.</p>
+
+    <div class="contact-grille">
+      <div class="carte">
+        <h3>Mes coordonnées</h3>
+        <ul class="coord">
+          <li><small>E-mail</small><a href="mailto:abdessamadkharmouch1999@gmail.com">abdessamadkharmouch1999@gmail.com</a></li>
+          <li><small>Téléphone</small><a href="tel:+212625596039">+212 6 25 59 60 39</a></li>
+          <li><small>Téléphone</small><a href="tel:+212601762966">+212 6 01 76 29 66</a></li>
+          <li><small>Localisation</small>Casablanca, Maroc</li>
+          <li><small>LinkedIn</small><a href="https://www.linkedin.com/in/kharmouch-abdessamad-722881428/?isSelfProfile=true" target="_blank" rel="noopener">abdessamad.kharmouch</a></li>
+          <li><small>GitHub</small><a href="https://github.com/abdsssamad" target="_blank" rel="noopener">abdessamad.kharmouch</a></li>
+        </ul>
+      </div>
+
+      <!-- Ce formulaire ouvre le logiciel e-mail du visiteur avec le message déjà rempli -->
+      <form id="formulaire" class="carte">
+        <label for="nom">Nom & Prénom </label>
+        <input id="nom" type="text" required autocomplete="name">
+
+        <label for="email">Adresse e-mail</label>
+        <input id="email" type="email" required autocomplete="email">
+
+        <label for="sujet">Objet</label>
+        <input id="sujet" type="text" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit" class="btn btn-plein">Envoyer</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="pied">© 2026 Kharmouch Abdessamad. Tous droits réservés.</footer>
+
+<script>
+document.getElementById('formulaire').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var nom = document.getElementById('nom').value;
+  var email = document.getElementById('email').value;
+  var sujet = document.getElementById('sujet').value;
+  var msg = document.getElementById('message').value;
+  var corps = encodeURIComponent(msg + '\n\n' + nom + '\n' + email);
+  window.location.href = 'mailto:abdessamadkharmouch1999@gmail.com?subject=' + encodeURIComponent(sujet) + '&body=' + corps;
+});
+</script>
+</body>
+</html>
